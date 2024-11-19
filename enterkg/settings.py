@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 
     #libs
     'drf_spectacular',
+    'ckeditor',
 
 ]
 
@@ -138,4 +139,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 REST_FRAMEWORK = {
     # YOUR SETTINGS
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',
+        'height': 300,
+        'width': 300,
+    },
 }
