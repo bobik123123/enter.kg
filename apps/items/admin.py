@@ -16,3 +16,13 @@ class SubCategoryAdmin(admin.ModelAdmin):
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
     pass
+
+
+class CartProduct(admin.TabularInline):
+    model = CartItem
+
+
+@admin.register(Cart)
+class ProductAdmin(admin.ModelAdmin):
+    inlines = [CartProduct]
+

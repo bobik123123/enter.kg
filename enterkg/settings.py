@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     #apps
     'apps.core',
     'apps.items',
+    'apps.users',
 
     #libs
     'drf_spectacular',
@@ -148,3 +149,5 @@ CKEDITOR_CONFIGS = {
         'width': 300,
     },
 }
+
+AUTH_USER_MODEL = "users.User"
